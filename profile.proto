@@ -1,11 +1,16 @@
 package FirePrime; //Version 1.0
 import "objectivec-descriptor.proto";
-    option (google.protobuf.objectivec_file_options).package = "FirePrime";
-    option (google.protobuf.objectivec_file_options).class_prefix = "FP";
+    option (google.protobuf.objectivec_file_options).package = "FirePrimeTool";
+    option (google.protobuf.objectivec_file_options).class_prefix = "FPProto";
     option (google.protobuf.objectivec_file_options).relax_camel_case = true;
 
+message Key {
+    required string identifier = 1;
+    required bytes secretKey = 2;
+    required string primitive = 3;
+    optional string target = 4;
+}
+
 message Profile {
-    required bytes secretKey = 1;
-    required string primitive = 2;
-    optional string target = 3;
+    repeated Key key = 1;
 }
