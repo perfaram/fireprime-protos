@@ -6,7 +6,7 @@ import "objectivec-descriptor.proto";
 
 message Key {
     required string identifier = 1;
-    required bytes secretKey = 2;
+    required bytes buffer = 2;
     required string primitive = 3;
     optional string target = 4;
 }
