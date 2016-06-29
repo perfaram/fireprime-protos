@@ -8,7 +8,7 @@ message Key {
     required string identifier = 1;
     required bytes buffer = 2;
     required string primitive = 3;
-    optional string target = 4;
+    required string target = 4;
 }
 
 message Profile {
