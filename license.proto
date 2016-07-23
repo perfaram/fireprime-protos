@@ -9,9 +9,10 @@ message Metadata {
     required string target = 2;
     required string licenseId = 3;
     required int64 created = 4;
+    optional bytes additional = 5; //JSON
 }
 
 message License {
     required Metadata license = 1;
-    required bytes signature = 5;
+    required bytes signature = 6;
 }
