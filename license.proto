@@ -13,6 +13,6 @@ message LicenseMetadata {
 }
 
 message License {
-    required Metadata license = 1;
+    required LicenseMetadata license = 1;
     required bytes signature = 6;
 }
