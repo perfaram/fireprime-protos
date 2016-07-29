@@ -1,7 +1,7 @@
 package FirePrime; //Version 1.1
 import "objectivec-descriptor.proto";
     option (google.protobuf.objectivec_file_options).package = "FirePrime";
-    option (google.protobuf.objectivec_file_options).class_prefix = "FP";
+    option (google.protobuf.objectivec_file_options).class_prefix = "FPLicense";
     option (google.protobuf.objectivec_file_options).relax_camel_case = true;
 
 message Metadata {
